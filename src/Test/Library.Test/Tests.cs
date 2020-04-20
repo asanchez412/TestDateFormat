@@ -22,8 +22,11 @@ namespace Library.Test
         public void CantidadCaracteresIncorrecta()
         {
             string testDate = "1611561616161160";
+            
+            string testDate2 = "1566";
 
             Assert.AreEqual(ChangeFormat.ToYYYYMMDD(testDate),"Fecha inválida.");
+            Assert.AreEqual(ChangeFormat.ToYYYYMMDD(testDate2),"Fecha inválida.");
         }
         [TestCase]
         public void NoEsFecha()

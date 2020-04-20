@@ -22,5 +22,17 @@ namespace DateFormat
                 return "Fecha inválida.";
             }
         }
+        public static string ToDDMMYYYY(string year)
+        {
+            if (year.Length == 10)
+            {
+                return year.Substring(0,2) + "-" + year.Substring(3,2) + "-" + year.Substring(6);
+            }
+            else
+            {
+                return "Fecha inválida.";
+            }
+        }
+        
     }
 }
